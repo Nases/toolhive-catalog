@@ -21,7 +21,10 @@
                   ".table.core.windows.net",
                   ".vault.azure.net",
                   ".documents.azure.com",
-                  ".servicebus.windows.net"
+                  ".servicebus.windows.net",
+                  ".azure-devices.net",
+                  ".azuresre.ai",
+                  "raw.githubusercontent.com"
                 ],
                 "allow_port": [
                   443
