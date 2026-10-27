@@ -1,0 +1,68 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.stacklok/easygerber-remote",
+  "description": "AI PCB design, layout, and routing",
+  "title": "EasyGerber (Remote)",
+  "repository": {
+    "url": "https://github.com/EasyGerber/easygerber-agent-plugin",
+    "source": "github"
+  },
+  "websiteUrl": "https://www.easygerber.com/agents",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.easygerber.com/api/mcp"
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/EasyGerber/easygerber-agent-plugin/fb61fbb68621d15ecb4861fe849346d733cc8f76/assets/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "io.github.stacklok": {
+        "https://www.easygerber.com/api/mcp": {
+          "tier": "Official",
+          "status": "Active",
+          "tags": [
+            "remote",
+            "pcb",
+            "electronics",
+            "schematic",
+            "routing"
+          ],
+          "tools": [
+            "submit_feedback",
+            "get_profile",
+            "list_organizations",
+            "search_parts",
+            "get_part",
+            "list_boards",
+            "get_board",
+            "create_board",
+            "update_board",
+            "delete_board",
+            "generate_layout",
+            "get_generation",
+            "stop_generation",
+            "check_board_layout",
+            "export_board",
+            "start_guest_session",
+            "claim_guest_board"
+          ],
+          "overview": "## EasyGerber (Remote)\n\nEasyGerber's official service provides AI PCB design, layout, and routing with published catalog parts. A typical workflow creates a schematic, generates a layout, inspects previews and checks, and exports board files. This guest-first entry allows discovery without an account; guest operations require a private session limited to one board. Account-board operations require separately configured EasyGerber OAuth and client support; account permissions, plan limits and billing apply. Placement, routing and scoring run on proprietary EasyGerber servers; the linked repository contains the public integration, and [setup, workflow and access documentation](https://www.easygerber.com/agents) describes the service.",
+          "custom_metadata": {
+            "author": "EasyGerber",
+            "homepage": "https://www.easygerber.com/agents"
+          }
+        }
+      }
+    }
+  }
+}
